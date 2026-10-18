@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breeze — Minimalist Weather</title>
+    <meta name="description" content="Breeze is a minimalist weather dashboard with real-time weather, forecasts, and a clean interface." />
+    <style>
+      :root {
+        --bg: #07111d;
+        --bg-2: #0d1d2d;
+        --panel: rgba(15, 23, 42, 0.9);
+        --text: #ebf3ff;
+        --muted: #9fb3c8;
+        --accent: #6ee7b7;
+        --accent-strong: #3dd4a9;
+        --shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .shell {
+        width: min(860px, calc(100% - 32px));
+        background: rgba(15, 23, 42, 0.76);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 24px;
+        padding: 42px 28px;
+        box-shadow: var(--shadow);
+      }
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.72rem;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2.4rem, 4vw, 4.8rem);
+        letter-spacing: -0.06em;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.08rem;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+      }
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        padding: 0 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+      a.button:hover {
+        transform: translateY(-1px);
+      }
+      a.primary {
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+        color: #061118;
+      }
+      a.secondary {
+        background: rgba(255,255,255,0.02);
+        color: var(--text);
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+      .meta {
+        margin-top: 26px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .pill {
+        padding: 7px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(255,255,255,0.02);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">v1.0.0 • PWA-ready</p>
+      <h1>Breeze</h1>
+      <p>
+        Simple, calm weather intelligence for your day. Search a city, use your current location,
+        and instantly view current conditions, hourly trends, and a 7-day forecast.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="https://stel79.github.io/breeze-weather/">Open the app</a>
+        <a class="button secondary" href="https://github.com/stel79/breeze-weather/archive/refs/heads/main.zip">Download ZIP</a>
+      </div>
+
+      <div class="meta">
+        <span class="pill">Public weather API</span>
+        <span class="pill">Modern React UI</span>
+        <span class="pill">Minimalist by design</span>
+      </div>
+    </main>
+  </body>
+</html>

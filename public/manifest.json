@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breeze — Download</title>
+    <meta name="description" content="Download Breeze, the minimalist weather dashboard." />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(180deg, #07111d 0%, #0d1d2d 100%);
+        color: #ebf3ff;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .card {
+        background: rgba(15,23,42,0.8);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px;
+        padding: 32px 28px;
+        width: min(550px, calc(100% - 28px));
+        box-shadow: 0 20px 48px rgba(0,0,0,0.28);
+      }
+      h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3rem); }
+      p { margin: 0 0 20px; color: #9fb3c8; line-height: 1.7; }
+      .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .primary {
+        color: #061118; background: linear-gradient(135deg, #6ee7b7 0%, #3dd4a9 100%);
+      }
+      .secondary {
+        color: #ebf3ff; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Breeze</h1>
+      <p>
+        A minimalist weather dashboard with clean visuals, current conditions, a 7-day forecast,
+        and a smooth search experience powered by Open-Meteo.
+      </p>
+      <div class="actions">
+        <a class="primary" href="https://stel79.github.io/breeze-weather/">Open live app</a>
+        <a class="secondary" href="https://github.com/stel79/breeze-weather/archive/refs/heads/main.zip">Download source ZIP</a>
+      </div>
+    </div>
+  </body>
+</html>
