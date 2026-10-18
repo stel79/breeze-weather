@@ -226,6 +226,13 @@ function App() {
 
   return (
     <div className="app-shell">
+      <div className="weather-scene" aria-hidden="true">
+        <div className="sun-orb" />
+        <div className="cloud cloud-1" />
+        <div className="cloud cloud-2" />
+        <div className="cloud cloud-3" />
+      </div>
+
       <header className="topbar">
         <div>
           <p className="eyebrow">Forecast</p>
